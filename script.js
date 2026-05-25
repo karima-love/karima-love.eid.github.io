@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const audioControl = document.getElementById('audio-control');
     const bgMusic = document.getElementById('bgMusic');
     
-    const correctPassword = "24/05/2026";
+    const correctPassword = "2026-05-24";
     let isMusicPlaying = false;
 
     // --- Password & Envelope Logic ---
