@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Love Letter For You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="music/love.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="audio-control" class="hidden">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <div id="loader">
+        <div class="heart-loader">
+            <i class="fas fa-heart"></i>
+        </div>
+        <p class="loader-text">Loading a special surprise...</p>
+    </div>
+
+    <div id="envelope-screen">
+        <div class="floating-bg"></div>
+        <div class="envelope-container">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="envelope-seal"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="password-box">
+                <h2>A gift for my love</h2>
+                <p>Enter our special date to open</p>
+                <div class="input-group">
+                    <i class="fas fa-lock lock-icon"></i>
+                    <input type="text" id="password-input" placeholder="DD/MM/YYYY" autocomplete="off">
+                </div>
+                <button id="unlock-btn">Open Envelope</button>
+                <p id="error-msg">That's not quite right, my love.</p>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" class="hidden">
+        
+        <section class="hero" id="hero">
+            <div class="parallax-bg"></div>
+            <div class="hero-content reveal">
+                <h1 class="arabic-text">عيد مبارك</h1>
+                <h1 class="english-title">Eid Mubarak, My Love</h1>
+                <p class="hero-subtitle">Every moment with you is a celebration.</p>
+                <div class="scroll-indicator">
+                    <p>Scroll down</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section" id="timeline">
+            <h2 class="section-title reveal">Our Beautiful Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item left reveal">
+                    <div class="timeline-card glassmorphism">
+                        <div class="timeline-icon"><i class="fas fa-star"></i></div>
+                        <h3>The First Meeting</h3>
+                        <p class="timeline-date">Where it all began</p>
+                        <p>The moment our eyes met, my world changed forever. It was the beginning of the most beautiful story.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal">
+                    <div class="timeline-card glassmorphism">
+                        <div class="timeline-icon"><i class="fas fa-laugh-beam"></i></div>
+                        <h3>Our First Laugh</h3>
+                        <p class="timeline-date">A spark of joy</p>
+                        <p>Hearing your laugh for the first time was like listening to my favorite melody. I knew I wanted to hear it every day.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left reveal">
+                    <div class="timeline-card glassmorphism">
+                        <div class="timeline-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>A Day to Remember</h3>
+                        <p class="timeline-date">November 21, 2025</p>
+                        <p>Celebrating you and the beautiful moments we share. A perfect milestone in our growing story together.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal">
+                    <div class="timeline-card glassmorphism">
+                        <div class="timeline-icon"><i class="fas fa-ring"></i></div>
+                        <h3>Future Dreams</h3>
+                        <p class="timeline-date">Forever & Always</p>
+                        <p>Every dream I build for the future has you resting right at the center of it. The best is yet to come.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title reveal">Memories We Created</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo1.jpg" alt="Memory 1">
+                    <p class="caption">Your smile lights up my entire world.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo2.jpg" alt="Memory 2">
+                    <p class="caption">The safest place I know is right beside you.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo3.jpg" alt="Memory 3">
+                    <p class="caption">Lost in your eyes, found in your heart.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo4.jpg" alt="Memory 4">
+                    <p class="caption">Every adventure is better with you.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo5.jpg" alt="Memory 5">
+                    <p class="caption">Just looking at you makes my day perfect.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo6.jpg" alt="Memory 6">
+                    <p class="caption">You are my today and all of my tomorrows.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo7.jpg" alt="Memory 7">
+                    <p class="caption">Holding your hand is holding my home.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo8.jpg" alt="Memory 8">
+                    <p class="caption">Your laughter is my favorite sound.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo9.jpg" alt="Memory 9">
+                    <p class="caption">My greatest blessing, always.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo10.jpg" alt="Memory 10">
+                    <p class="caption">A love out of a fairytale, but real.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo11.jpg" alt="Memory 11">
+                    <p class="caption">Your soul and mine, perfectly aligned.</p>
+                </div>
+                <div class="gallery-item reveal glassmorphism">
+                    <img src="images/photo12.jpg" alt="Memory 12">
+                    <p class="caption">Forever isn't long enough with you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="letter-section" id="letter">
+            <div class="letter-paper glassmorphism reveal">
+                <h2 class="letter-heading">My Dearest...</h2>
+                <div class="typing-container">
+                    <p id="typed-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reasons-section" id="reasons">
+            <h2 class="section-title reveal">Why I Love You</h2>
+            <div class="reasons-grid">
+                <div class="reason-card glassmorphism reveal">
+                    <i class="fas fa-smile-beam"></i>
+                    <h3>Your Smile</h3>
+                    <p>It has the power to instantly chase away any shadows in my day.</p>
+                </div>
+                <div class="reason-card glassmorphism reveal">
+                    <i class="fas fa-dove"></i>
+                    <h3>Your Kindness</h3>
+                    <p>The gentle, pure way you treat everyone and everything around you.</p>
+                </div>
+                <div class="reason-card glassmorphism reveal">
+                    <i class="fas fa-music"></i>
+                    <h3>Your Voice</h3>
+                    <p>My ultimate comfort, calming my storms and bringing me absolute peace.</p>
+                </div>
+                <div class="reason-card glassmorphism reveal">
+                    <i class="fas fa-home"></i>
+                    <h3>Your Warmth</h3>
+                    <p>With you, I finally know what it feels like to truly be home.</p>
+                </div>
+                <div class="reason-card glassmorphism reveal">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Your Support</h3>
+                    <p>Your unwavering belief in me makes me want to be the best version of myself.</p>
+                </div>
+                <div class="reason-card glassmorphism reveal">
+                    <i class="fas fa-infinity"></i>
+                    <h3>Your Love</h3>
+                    <p>It is the most beautiful, unconditional, and magical gift I have ever received.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="eid-special" id="eid-special">
+            <div class="crescent-moon reveal"></div>
+            <div class="stars-bg"></div>
+            <h2 class="eid-message reveal">Every Eid becomes more beautiful because of you.</h2>
+            <p class="eid-sub reveal">May our lives be filled with endless blessings, joy, and eternal love.</p>
+        </section>
+
+        <section class="final-section" id="final">
+            <canvas id="fireworks-canvas"></canvas>
+            <div class="final-content reveal">
+                <h1 class="glowing-text">Eid Mubarak My Love ❤️</h1>
+                <button id="open-heart-btn" class="glassmorphism">Open My Heart</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="surprise-modal" class="hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content glassmorphism">
+            <button id="close-modal"><i class="fas fa-times"></i></button>
+            <h2>My Heart Belongs to You</h2>
+            <p>Thank you for being my partner, my peace, and my greatest joy. I promise to love you, cherish you, and protect our love for all the days of my life.</p>
+            <p class="modal-signature">Yours forever.</p>
+            <i class="fas fa-heart pulsing-heart"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
