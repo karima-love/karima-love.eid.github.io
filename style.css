@@ -226,11 +226,22 @@ h1, h2, h3 {
     background: rgba(255, 255, 255, 0.8);
     color: var(--text-dark);
     transition: all 0.3s;
+    -webkit-text-security: disc; 
 }
 
 #password-input:focus {
     box-shadow: 0 0 15px var(--rose-gold);
     border-color: var(--text-rose);
+}
+
+#password-input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+#password-input::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
 }
 
 #unlock-btn {
